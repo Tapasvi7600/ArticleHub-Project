@@ -1,0 +1,23 @@
+<div style="width:100%;">
+    <div style="float:left; width:60%;">
+        <article>
+            <div id="cal1">&nbsp;</div>
+            <div id="cal2">&nbsp;</div>
+            <div id="tooltip" class="div1"><button (click)="OpenPopup('business')"><span class="fa fa-comment"></span></button></div>
+            <div (mouseup)="GetCoordinates();showCoords($event)">
+                <h1 style="background-color: grey">Business articles</h1>
+                <p style="text-align: justify">OnPay's online payroll services take care of all payroll and payroll tax responsibilities for small businesses. The service allows an unlimited number of payroll runs each month for W-2 employees and 1099 contract workers. The option to run payroll at any time allows you to create multiple pay schedules for different types of employees.
+                    For example, contract workers can be paid every week and salaried employees every other week.
+                    Not all online payroll services allow unlimited payroll runs. Some of the providers we considered charge by pay period, which drives up costs, depending on how often employees are paid. With OnPay, employees can be paid by check or direct deposit. For direct deposit, employees are paid two days after each pay run. You can also print out checks for employees using any standard printer. The checks are created automatically and do not require any special software. - See more at: http://www.businessnewsdaily.com/7479-best-payroll-service-micro-business.html#sthash.7dJSxvhG.dpuf</p>
+            </div>
+        </article>
+    </div>
+    <div  class="comment"  style="float:right; width:30%; margin-left:10px;">
+        <h3>Comments</h3>
+        <div  class="textarea" *ngIf="displayTextArea">
+            <textarea rows="4" cols="50">{{textAreaData}}</textarea>
+        </div>
+        <div class="button-group">
+        </div>
+    </div>
+</div>

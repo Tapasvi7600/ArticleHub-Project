@@ -1,0 +1,30 @@
+<div style="width:100%;">
+    <div style="float:left; width:60%;">
+        <article>
+            <div id="cal1">&nbsp;</div>
+            <div id="cal2">&nbsp;</div>
+            <div id="tooltip" class="div1"><button (click)="OpenPopup('sports')"><span class="fa fa-comment"></span></button></div>
+            <div (mouseup)="GetCoordinates();showCoords($event)">
+                <h1 style="background-color: grey">Sports articles</h1>
+                <h3>China wants to become a Soccer Superpower</h3>
+                <p style="text-align: justify">The Chinese government plans to make soccer the number one sport in the country. By 2050 it wants to get 50 million children and adults to play the game.
+
+                    Although the most populous country in the world , China has never been really good at the world's most popular sport.  According to the government, 20000 training centres are planned  and 70000 new soccer fields will be built within the next decades. It also wants to set up soccer schools and offer young players more training programs.
+
+                    FIFA hopes that the China's desire to become a global player in soccer will raise the country's rankings, currently at number 80 in the FIFA list. In contrast to men, who have only qualified for the World Cup once in 2002, Chinese women are more successful in the sport. They have even made it to the World Cup finals in 1999.
+
+                    China's leader Xi Jinping is the driving force behind the new sport initiative . He loves soccer and  played the game during his youth. Xi wants China to play a major role in Asia and maybe even win the World Cup one day. Recently, Chinese billionaires  have started to invest in China's Super League, luring top European players to the country. Guangzhou Evergrande, one of China's top teams,  has  paid 45 million dollars for Athletico Madrid top star Jackson Martinez.
+
+                    But before China reaches its goal it must clean up its own house. Corruption charges loom over the league. In 2013 33 players were banned from competition after they had been accused of match-fixing.</p>
+            </div>
+        </article>
+    </div>
+    <div  class="comment"  style="float:right; width:30%; margin-left:10px;">
+        <h3>Comments</h3>
+        <div  class="textarea" *ngIf="displayTextArea">
+            <textarea rows="4" cols="50">{{textAreaData}}</textarea>
+        </div>
+        <div class="button-group">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div style="width:100%;">
+    <div style="float:left; width:60%;">
+        <article>
+            <div id="cal1">&nbsp;</div>
+            <div id="cal2">&nbsp;</div>
+            <div id="tooltip" class="div1"><button (click)="OpenPopup('technology')"><span class="fa fa-comment"></span></button></div>
+            <div (mouseup)="GetCoordinates();showCoords($event)">
+                <h1 style="background-color: grey">Technology articles</h1>
+                <h3>Building good mobile navigation is super hard. So why is Uber trying it?</h3>
+                <p style="text-align: justify">Manik Gupta, the head of Uber’s maps product team, describes the current navigation options in its iOS app as “very, very primitive,” while the Android app lacks navigation completely. The coming update, however, will seriously bolster in-app navigation features for Uber drivers with some help from industry veteran, TomTom. Some industry analysts also see this as a possible possible next step toward a self-driving fleet.
+                    “When we started thinking about building this navigation experience for drivers,” he says, “we realized a big different between how traditionally people navigate from point A to point B, versus what drivers do on Uber.” Just think about the complexities of uberPool, for example, where a driver is grabbing multiple passengers while trying to get them all to their destinations in an efficient way.
+                    Uber touts new navigation features like a gentle-on-the-eyes night mode, a system designed to be seen from a phone that’s 3 feet away and mounted on a dashboard, and a preview of the very first turn a driver has to make after pulling away from a curb.
+                    They have “redesigned everything from the ground up,” Gupta says; part of that includes the integration of TomTom’s navigation data. It’s the beginning of a longer process, and Gupta points out that drivers can still use whatever navigational app they want.
+                    Their goal is to “build an experience that is really, really integrated in the app,” Gupta says, custom-made for the complex situations Uber drivers are in. “Obviously we have a long way to go.”
+                    But mapping is complicated. (Just ask Apple, whose first version of Apple Maps was heavily criticized.) It’s a point that Gupta, who used to work at Google Maps, appreciates.
+                    Christopher Mertz, the principal project scientist at Carnegie Mellon’s Robotics Institute, and a cofounder of a company called Roadbotics, has a hunch that there might be more to the story.
+                    “Right now, they’re doing it for navigation,” he says. “But I think even more importantly it will be for their autonomous driving.”
+                    Mertz focuses his research on the perception systems of autonomous cars. He says that map-makers need to keep in mind factors like scale and accuracy, and deal with incorporating data from multiple sources. Self-driving cars, he points out, need to have very fine-grained maps, down to the inch or smaller.
+                    Autonomous driving—which Uber has already piloted in Pittsburgh—requires dealing with variables like, say, whether vegetation is obstructing a view around a corner, Mertz points out. As Uber takes more control over the navigation process, it could help them learn more, he says. "Maps are very important for autonomous driving."
+                    Part of the broader context is that Waymo (a part of Google parent company Alphabet) is suing Uber over technology relating to self-driving vehicles, although an Uber spokesperson strongly emphasized that the company’s mapping and navigation initiative is completely unrelated to that ongoing litigation. On another point, Gupta says that Google’s tech was never part of Uber’s driver-facing navigation features in its app, and still is not.
+                    As for self-driving cars, Gupta says they have “nothing to announce on that right now,” emphasizing that this update is really about giving the drivers a better experience. “From my perspective, that is what we are focused on right now.”</p>
+            </div>
+        </article>
+    </div>
+    <div  class="comment"  style="float:right; width:30%; margin-left:10px;">
+        <h3>Comments</h3>
+        <div  class="textarea" *ngIf="displayTextArea">
+            <textarea rows="4" cols="50">{{textAreaData}}</textarea>
+        </div>
+        <div class="button-group">
+        </div>
+    </div>
+</div>

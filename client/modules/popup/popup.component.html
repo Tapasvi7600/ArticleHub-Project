@@ -1,0 +1,24 @@
+<div class="popup">
+    <form #commentForm="ngForm">
+        <div class="card-block">
+            <!--Title:<input class="card-title" placeholder="You can put any tit here"/><br>-->
+            <!--&lt;!&ndash;//<h4 class="card-title">You can put the title here</h4>&ndash;&gt;-->
+            <!--Text:<input class="card-text" placeholder="You can add text here"-->
+                        <!--[(ngModel)]="comment.CommentData"/><br><br>-->
+            <div class="form-group">
+                <label for="CommentData">Comment Data</label>
+                <input type="text" class="form-control" name="CommentData" id="CommentData"
+                       placeholder="Enter Comment here"
+                       [(ngModel)]="comment.CommentData"
+                       #CommentData="ngModel">
+            </div>
+
+            <!--<p class="card-text">You can add text here</p>-->
+            <!--<a href="#" class="btn btn-primary">This button</a>-->
+        </div>
+        <button value="Add" class="btn btn-sm btn-success"
+                (click)="onSubmit(commentForm)">Add</button>
+        <input type="button" class="btn btn-sm btn-danger" value="Cancel" (click)="onClose()">
+    </form>
+
+</div>

@@ -1,0 +1,31 @@
+<div style="width:100%;">
+    <div style="float:left; width:60%;">
+        <article>
+            <div id="cal1">&nbsp;</div>
+            <div id="cal2">&nbsp;</div>
+            <div id="tooltip" class="div1"><button (click)="OpenPopup('politics')"><span class="fa fa-comment"></span></button></div>
+            <div (mouseup)="GetCoordinates();showCoords($event)">
+                <h1 style="background-color: grey">Politics articles</h1>
+                <h3>e-Governance in India</h3>
+                <p style="text-align: justify">The National e-Governance Plan (NeGP), which intends to change the outlook of the government towards the processes followed, has always hinged on two factors: building capacity within the government and creating awareness among the citizens.
+
+                    The plan, which got government’s approval on 18 May 2006, was formulated to create a strong foundation on which the edifice of e-Governance could be built. It elaborates on the need for creating ‘right governance’ and having adequate institutional mechanisms, infrastructure and policies in place to ensure speedy implementation of mission-critical projects both at Centre and State levels.
+
+                    - See more at: http://www.elections.in/political-corner/what-is-e-governance-and-its-importance-in-india/#sthash.pgVPNbET.dpuf
+                    India’s efforts towards bridging the urban-rural divide as well as digital divide are yet to yield substantial results so far. A recent United Nations report, which tracks the status of e-Governance preparedness across countries, has placed India at 118th position in the list of 193 countries. The report also revealed that there’s a strong correlation between the e-Government Development Index and the national income of a country.
+
+                    While it is convenient to pass the buck to “resistance to change” for low user adoption of web-based system for government services, there are two other challenges that are rearing their heads. In the absence of privacy law and data protection law, implementation of a majority of e-governance initiatives in India has witnessed failure. Another challenge that the government of India can’t deny for long is the poor cyber security in the country. According to the experts, e-governance without cyber security is meaningless. They are of the opinion that the apathy towards cyber security breeds from the fact that there is no mandatory e-governance services in India.
+
+                    - See more at: http://www.elections.in/political-corner/what-is-e-governance-and-its-importance-in-india/#sthash.pgVPNbET.dpuf</p>
+            </div>
+        </article>
+    </div>
+    <div class="comment" style="float:right; width:30%; margin-left:10px;">
+        <h3>Comments</h3>
+        <div  class="textarea" *ngIf="displayTextArea">
+            <textarea rows="4" cols="50">{{textAreaData}}</textarea>
+        </div>
+        <div class="button-group">
+        </div>
+    </div>
+</div>
