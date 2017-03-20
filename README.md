@@ -21,3 +21,6 @@ Installation:
     Getcomment:http://localhost:8081/api/comment/:articleType/:id
 	AddComment:http://localhost:8081/api/comment
 
+
+Note:If you have any problem compiling the files enable the typescript compiler.
+write 'tsc' in command line.
